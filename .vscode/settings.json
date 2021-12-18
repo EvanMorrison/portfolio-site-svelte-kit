@@ -1,0 +1,10 @@
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "svelte.enable-ts-plugin": true,
+  "svelte.plugin.css.globals": "app.css",
+  "svelte.plugin.svelte.defaultScriptLanguage": "ts",
+  "editor.autoClosingDelete": "always"
+}
