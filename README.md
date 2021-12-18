@@ -1,38 +1,27 @@
-# create-svelte
+# Personal Portfolio Site
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte);
+## [Visit site: evmorrison.com](https://evmorrison.com)
 
-## Creating a project
+## Description
 
-If you're seeing this, you've probably already done this step. Congrats!
+A personal portfolio website built with [Svelte Kit](https://kit.svelte.dev/docs).
 
-```bash
-# create a new project in the current directory
-npm init svelte@next
+I originally built the site with [React](https://facebook.github.io/react/), and [Emotion](http://emotion.sh), with custom bundling and build processing using [Babel](https://babeljs.io/) and [Webpack](https://webpack.github.io/). React and Emotion are great and I have really enjoyed working with them.
 
-# create a new project in my-app
-npm init svelte@next my-app
-```
+But then I took a position with a new company that has me working primarily with Svelte for the front end, and I thought it would be interesting to remake the site using Svelte.
 
-> Note: the `@next` is temporary
+Svelte is a great new front end framework that's very intuitive to work with, and Svelte Kit is a terrific application framework for developing and deploying sites quickly to any number of platforms.
 
-## Developing
+## Details
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+The site is fairly clean and simple on a single page. There's no permanent navbar, but
+an expandable nav menu provides smooth scrolling to corresponding section
+of the website.
 
-```bash
-npm run dev
+Sections:
 
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-Before creating a production version of your app, install an [adapter](https://kit.svelte.dev/docs#adapters) for your target environment. Then:
-
-```bash
-npm run build
-```
-
-> You can preview the built app with `npm run preview`, regardless of whether you installed an adapter. This should _not_ be used to serve your app in production.
+- Hero Image Home and Title
+- Contact Info and Resume
+- About Me Summary
+- Sample Projects: a selection of projects with links to live deployments
+  as well as to Github for further details and information.
