@@ -1,6 +1,6 @@
 :root {
   font-family: Roboto;
-  font-size: calc(15 / 16)em;
+  font-size: calc(15 / 16 * 1rem);
 }
 
 html,
