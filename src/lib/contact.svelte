@@ -1,8 +1,10 @@
 <script lang="ts">
+  export let contactRef: HTMLElement;
+
   const url = 'https://i.imgur.com/wmK5ZW9.jpg';
 </script>
 
-<section class="app-section">
+<section class="app-section" bind:this={contactRef}>
   <div class="heading-wrapper">
     <img class="avatar" src={url} alt="portrait" />
     <h1 class="section-heading contact-section-heading">Contact</h1>
