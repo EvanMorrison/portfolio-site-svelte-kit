@@ -1,4 +1,8 @@
-<section class="app-section">
+<script lang="ts">
+  export let homeRef: HTMLElement;
+</script>
+
+<section class="app-section" bind:this={homeRef}>
   <div class="title-section">
     <h1 class="main-title">Evan Morrison</h1>
     <h2 class="subtitle">Software Engineer / Web Developer</h2>
@@ -43,6 +47,8 @@
   }
 
   .main-title {
+    padding: 0;
+    margin: 0;
     font-size: 3em;
     font-family: Roboto;
     font-weight: 100;
@@ -52,6 +58,8 @@
   }
 
   .subtitle {
+    padding: 0;
+    margin: 0;
     font-weight: 100;
     width: 100%;
     text-align: center;

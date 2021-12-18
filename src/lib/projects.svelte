@@ -1,4 +1,8 @@
-<section class="app-section">
+<script lang="ts">
+  export let projectsRef: HTMLElement;
+</script>
+
+<section class="app-section" bind:this={projectsRef}>
   <div class="project-title-section">
     <h1 class="section-heading">SAMPLE PROJECTS</h1>
     <h2>Click a website image to visit the live site.</h2>
