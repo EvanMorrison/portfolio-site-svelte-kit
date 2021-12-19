@@ -1,4 +1,7 @@
 <script lang="ts">
+  import projectList from './data/projectList';
+  import Project from './project.svelte';
+
   export let projectsRef: HTMLElement = null;
 </script>
 
@@ -8,7 +11,11 @@
     <h2>Click a website image to visit the live site.</h2>
     <h2>Github icons are linked to the corresponding repo.</h2>
   </div>
-  <div class="card-group" />
+  <div class="card-group">
+    {#each projectList as project (project.name)}
+      <Project {project} />
+    {/each}
+  </div>
 </section>
 
 <style>
