@@ -46,6 +46,6 @@
   <li class:active={sectionNum === 4} on:click={() => handleMenuClick(projectsRef)}>Projects</li>
 </Menu>
 <Home bind:homeRef />
-<AboutMe bind:aboutMeRef />
+<AboutMe bind:aboutMeRef {sectionNum} />
 <Contact bind:contactRef />
 <Projects bind:projectsRef />
