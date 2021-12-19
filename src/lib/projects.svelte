@@ -1,6 +1,6 @@
 <script lang="ts">
   import projectList from './data/projectList';
-  import Project from './project.svelte';
+  import ProjectCard from './project.svelte';
 
   export let projectsRef: HTMLElement = null;
 </script>
@@ -13,7 +13,7 @@
   </div>
   <div class="card-group">
     {#each projectList as project (project.name)}
-      <Project {project} />
+      <ProjectCard {project} />
     {/each}
   </div>
 </section>
