@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let projectsRef: HTMLElement;
+  export let projectsRef: HTMLElement = null;
 </script>
 
 <section class="app-section" bind:this={projectsRef}>

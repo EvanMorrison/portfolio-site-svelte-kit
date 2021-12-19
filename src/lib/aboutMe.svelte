@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let aboutMeRef: HTMLElement;
+  export let aboutMeRef: HTMLElement = null;
 
   const logos: { key: string; url: string }[] = [];
 </script>
@@ -36,6 +36,11 @@
 
   .content {
     max-width: 700px;
+  }
+
+  a,
+  a:visited {
+    color: #f58;
   }
 
   .logo-group {

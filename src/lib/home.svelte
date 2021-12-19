@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let homeRef: HTMLElement;
+  export let homeRef: HTMLElement = null;
 </script>
 
 <section class="app-section" bind:this={homeRef}>
