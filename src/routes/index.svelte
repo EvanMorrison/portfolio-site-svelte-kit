@@ -14,22 +14,25 @@
   let backgroundDark = false;
 
   const handleMenuClick = (el: HTMLElement) => {
+    if (!el) window.location.reload();
     el.scrollIntoView({ behavior: 'smooth', block: 'start' });
   };
 
   const scrollHandler = () => {
-    if (projectsRef.getBoundingClientRect().top < 30) {
+    if (projectsRef?.getBoundingClientRect().top < 30) {
       backgroundDark = true;
       sectionNum = 4;
-    } else if (contactRef.getBoundingClientRect().top < 30) {
+    } else if (contactRef?.getBoundingClientRect().top < 30) {
       backgroundDark = false;
       sectionNum = 3;
-    } else if (aboutMeRef.getBoundingClientRect().top < 30) {
+    } else if (aboutMeRef?.getBoundingClientRect().top < 30) {
       backgroundDark = true;
       sectionNum = 2;
-    } else {
+    } else if (homeRef?.getBoundingClientRect()) {
       backgroundDark = false;
       sectionNum = 1;
+    } else {
+      window.location.reload();
     }
   };
 </script>

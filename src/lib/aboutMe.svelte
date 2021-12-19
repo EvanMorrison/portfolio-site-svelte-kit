@@ -16,9 +16,9 @@
     <p>
       I'm currrently a software engineer at <a href="https://www.filevine.com/" target="_blank"
         >Filevine</a
-      >, doing fullstack work with Svelte, Javascript, and C#/ASP.Net And I have a portfolio of work
-      with various clients and open source projects (check it out below!). I am continually seeking
-      to expand my skills and knowledge and tackle new challenges.
+      >, doing full-stack work with Svelte, Javascript, and C#/ASP.Net. I have a portfolio of work
+      from a variety of projects (check it out below!). I am continually seeking to expand my skills
+      and knowledge and tackle new challenges.
     </p>
     <div class="logo-group">
       {#each logos as logo (logo.key)}
