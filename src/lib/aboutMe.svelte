@@ -1,7 +1,9 @@
 <script lang="ts">
-  export let aboutMeRef: HTMLElement = null;
+  import { logoUrls } from './data/imgUrls';
+  import AboutMeLogo from './aboutMeLogo.svelte';
 
-  const logos: { key: string; url: string }[] = [];
+  export let aboutMeRef: HTMLElement = null;
+  export let sectionNum: number;
 </script>
 
 <section class="app-section" bind:this={aboutMeRef}>
@@ -21,8 +23,8 @@
       and knowledge and tackle new challenges.
     </p>
     <div class="logo-group">
-      {#each logos as logo (logo.key)}
-        <img src={logo.url} alt={logo.key} />
+      {#each Object.values(logoUrls).slice(0, 17) as logo, index (logo)}
+        <AboutMeLogo {logo} {index} {sectionNum} {aboutMeRef} />
       {/each}
     </div>
   </div>
@@ -32,6 +34,7 @@
   section {
     background-color: #191919;
     color: #fff;
+    overflow: hidden;
   }
 
   .content {
@@ -47,17 +50,5 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-  }
-
-  .logo-group img {
-    height: 64px;
-    margin-right: 24px;
-    margin-top: 15px;
-  }
-
-  @media (max-width: 708px) {
-    .logo-group img {
-      height: 32px;
-    }
   }
 </style>

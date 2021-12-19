@@ -1,4 +1,5 @@
 const logoUrls = {
+  Svelte: '/static/images/logos/svelte_logo_plus_name.png',
   ReactJS: '/static/images/logos/reactjs1.jpg',
   Redux: '/static/images/logos/redux.jpg',
   Java: '/static/images/logos/java.png',
