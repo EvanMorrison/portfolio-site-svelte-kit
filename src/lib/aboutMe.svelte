@@ -23,8 +23,8 @@
       and knowledge and tackle new challenges.
     </p>
     <div class="logo-group">
-      {#each Object.values(logoUrls).slice(0, 17) as logo, index (logo)}
-        <AboutMeLogo {logo} {index} {sectionNum} {aboutMeRef} />
+      {#each Object.values(logoUrls).slice(0, 19) as logo (logo)}
+        <AboutMeLogo {logo} {sectionNum} {aboutMeRef} />
       {/each}
     </div>
   </div>

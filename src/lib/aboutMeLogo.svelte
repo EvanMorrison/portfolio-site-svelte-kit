@@ -4,28 +4,31 @@
   export let aboutMeRef: HTMLElement;
   export let logo: string;
   export let sectionNum: number;
-  export let index: number;
 
   let enter = false;
   let innerWidth: number;
   let innerHeight: number;
 
+  const calcStiffness = () => (((Math.random() * 100) % 20) + 81) / 10000;
+  const damping = 0.14;
+
   const coord = spring(
     { x: 0, y: 0, z: 0 },
     {
-      stiffness: (((Math.random() * 100) % 3) + 1) / 100,
-      damping: Math.max((((Math.random() * 100) % 25) + 1) / 100, 0.15),
+      stiffness: calcStiffness(),
+      damping,
     }
   );
 
   $: {
     if (sectionNum === 2 || enter) {
+      coord.stiffness = calcStiffness();
       $coord = { x: 0, y: 0, z: 0 };
     } else {
       $coord = {
-        x: (innerWidth + Math.random() * innerWidth) * (index % 2 === 0 ? 1 : -1),
-        y: (innerHeight + Math.random() * innerHeight) * (index % 2 === 0 ? 1 : -1),
-        z: Math.random() * 4 * (index % 2 === 0 ? -1 : 1),
+        x: Math.random() * innerWidth * (Math.round(Math.random()) ? 1 : -1),
+        y: Math.random() * innerHeight * (Math.round(Math.random()) ? 1 : -1),
+        z: Math.random() * 4,
       };
     }
   }
@@ -59,7 +62,7 @@
   }
 
   img {
-    height: 64px;
+    height: 50px;
     margin-right: 24px;
     margin-top: 15px;
   }
