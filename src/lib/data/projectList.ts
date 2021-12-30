@@ -53,14 +53,14 @@ const projectList = [
   },
   {
     name: 'Portfolio Website',
-    siteUrl: 'http://www.evmorrison.com',
+    siteUrl: 'http://www.evanmorrison.dev',
     imgUrl: projectUrls['Portfolio Site'],
     gitUrl: 'https://github.com/EvanMorrison/portfolio-site-svelte-kit',
     frameworks: ['SvelteKit', 'Netlify'],
   },
   {
     name: 'Real-T',
-    siteUrl: 'http://real-t.evmorrison.com',
+    siteUrl: 'https://real-t-e5280.web.app/login',
     imgUrl: projectUrls['Real-T'],
     gitUrl: 'https://github.com/EvanMorrison/real-t',
     frameworks: [
