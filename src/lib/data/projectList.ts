@@ -11,21 +11,21 @@ export interface Project {
 const projectList = [
   {
     name: 'TazWorks Instascreen',
-    siteUrl: 'https://is-demo-evanmorrison.netlify.com',
+    siteUrl: 'https://is-demo-evanmorrison.netlify.app',
     imgUrl: projectUrls['Tazworks Instascreen'],
     gitUrl: 'https://github.com/EvanMorrison/IS-demo',
     frameworks: ['ReactJS', 'Redux', 'Webpack', 'Java', 'MySQL'],
   },
   {
     name: 'Rich Text Editor',
-    siteUrl: 'https://draft-js-rte-evanmorrison.netlify.com',
+    siteUrl: 'https://draft-js-rte-evanmorrison.netlify.app',
     imgUrl: projectUrls['Rich Text Editor'],
     gitUrl: 'https://github.com/EvanMorrison/draft-js-rte',
     frameworks: ['ReactJS', 'Nextjs'],
   },
   {
     name: 'Multiselect Component',
-    siteUrl: 'https://multiselect-demo-evanmorrison.netlify.com',
+    siteUrl: 'https://multiselect-demo-evanmorrison.netlify.app',
     imgUrl: projectUrls['Multiselect Demo'],
     gitUrl: 'https://github.com/EvanMorrison/multiselect-demo',
     frameworks: ['ReactJS', 'Nextjs'],
@@ -39,7 +39,7 @@ const projectList = [
   },
   {
     name: 'Therapy Business',
-    siteUrl: 'https://mt4w.netlify.com',
+    siteUrl: 'https://mt4w.netlify.app',
     imgUrl: projectUrls['Therapy Business'],
     gitUrl: 'https://github.com/EvanMorrison/mt4w-romano',
     frameworks: ['ReactJS', 'Webpack'],

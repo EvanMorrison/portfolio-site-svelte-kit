@@ -40,10 +40,10 @@
 <svelte:window on:scroll={scrollHandler} />
 
 <Menu onDark={backgroundDark} {sectionNum}>
-  <li class:active={sectionNum === 1} on:click={() => handleMenuClick(homeRef)}>Top</li>
-  <li class:active={sectionNum === 2} on:click={() => handleMenuClick(aboutMeRef)}>About</li>
-  <li class:active={sectionNum === 3} on:click={() => handleMenuClick(contactRef)}>Contact</li>
-  <li class:active={sectionNum === 4} on:click={() => handleMenuClick(projectsRef)}>Projects</li>
+  <li class:active={sectionNum === 1}><div on:click={() => handleMenuClick(homeRef)} on:keyup role="button" tabindex="0">Top</div></li>
+  <li><div class:active={sectionNum === 2} on:click={() => handleMenuClick(aboutMeRef)} on:keyup role="button" tabindex="0">About</div></li>
+  <li><div class:active={sectionNum === 3} on:click={() => handleMenuClick(contactRef)} on:keyup role="button" tabindex="0">Contact</div></li>
+  <li><div class:active={sectionNum === 4} on:click={() => handleMenuClick(projectsRef)} on:keyup role="button" tabindex="0">Projects</div></li>
 </Menu>
 <Home bind:homeRef />
 <AboutMe bind:aboutMeRef {sectionNum} />
